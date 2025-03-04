@@ -33,6 +33,7 @@ const effectController = {
   limitConnections: false,
   maxConnections: 25,
   particleCount: 500,
+  rotationSpeed: 0.01,
 };
 
 init();
@@ -270,6 +271,8 @@ function animate() {
 
   pointCloud.geometry.attributes.position.needsUpdate = true;
 
+  group.rotation.y += effectController.rotationSpeed;
+
   requestAnimationFrame(animate);
 
   stats.update();
@@ -278,6 +281,5 @@ function animate() {
 
 function render() {
   const time = Date.now() * 0.001;
-//   group.rotation.y = time * 0.1;
   renderer.render(scene, camera);
 }
