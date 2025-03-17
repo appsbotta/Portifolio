@@ -172,12 +172,13 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact-container bd-grid">
-                <form action="" class="contact-form">
-                    <input type="text" placeholder="Name" class="contact-input">
-                    <input type="email" placeholder="Email" class="contact-input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+                <form action="https://formsubmit.co/appsbotta@gmail.com" method="POST" class="contact-form">
+                    <input type="text" placeholder="Name" class="contact-input" required>
+                    <input type="email" placeholder="Email" class="contact-input" required>
+                    <input type="hidden" name="_next" value="https://bottalokesh.netlify.app/thankyou.html">
+                    <textarea name="" id="" cols="0" rows="10" class="contact-input" required></textarea>
 
-                    <input type="button" value="Send" class="contact-button button">
+                    <input type="submit" value="Send" class="contact-button button">
                 </form>
             </div>
         </section>
