@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script type="importmap">
-        {
-          "imports": {
-            "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
-            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/"
-          }
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/"
         }
+      }
     </script>
 </head>
+
 <body>
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -24,34 +26,48 @@
 
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
                     <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="nav-toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <i class="bx bx-menu"></i>
             </div>
-
         </nav>
     </header>
 
     <main class="l-main">
         <section class="home bd-grid" id="home">
             <div class="home-data">
-                <h1 class="home-title">Hi, <br>I'm <span class="home-title-color">Lokesh</span><br>An Aspiring<br> Data Scientist</h1>
+                <h1 class="home-title">
+                    Hi, <br />I'm <span class="home-title-color">Lokesh</span><br />An
+                    Aspiring<br />
+                    Data Scientist
+                </h1>
                 <a href="#" class="button">Contact</a>
             </div>
 
             <div class="home-social">
-                <a href="https://www.linkedin.com/in/lokesh5489/" target="_blank" class="home-social-icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/appsbotta" target="_blank" class="home-social-icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/lokesh5489/" target="_blank" class="home-social-icon"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/appsbotta" target="_blank" class="home-social-icon"><i class="bx bxl-github"></i></a>
             </div>
 
-            <div class="home-img" id = "bot">
+            <div class="home-img" id="bot">
                 <script type="module" src="3d.js"></script>
             </div>
         </section>
@@ -61,12 +77,89 @@
 
             <div class="about-container bd-grid">
                 <div class="about-img">
-                    <img src="images\profile.jpg" alt="image">
+                    <img src="images\profile.jpg" alt="image" />
                 </div>
 
                 <div>
                     <h2 class="about-subtitle">I'm Lokesh Appa Rao</h2>
-                    <p class="about-text">As a passionate data scientist, I specialize in generative AI, agentic AI, and natural language processing (NLP). I thrive on building intelligent systems that generate creative solutions, understand human language, and drive autonomous decision-making. My journey in data science began with a fascination for how AI can revolutionize industries and transform the way we interact with technology.</p>
+                    <p class="about-text">
+                        As a passionate data scientist, I specialize in generative AI,
+                        agentic AI, and natural language processing (NLP). I thrive on
+                        building intelligent systems that generate creative solutions,
+                        understand human language, and drive autonomous decision-making.
+                        My journey in data science began with a fascination for how AI can
+                        revolutionize industries and transform the way we interact with
+                        technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="mt-20 flex flex-col">
+                <div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
+                    
+                    <div id="" class="vertical-timeline-element">
+                        <span class="vertical-timeline-element-icon bounce-in" style="background: rgb(230, 222, 221)">
+                            <div class="flex justify-center items-center w-full h-full">
+                                <img src="images\IITG_logo.png" alt="IITG" class="w-[60%] h-[60%] object-contain" />
+                            </div>
+                        </span>
+                        <div class="vertical-timeline-element-content bounce-in" style="background: #4070F4; color: rgb(255, 255, 255)">
+                            <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(105, 78, 4)"></div>
+                            <div>
+                                <h3 class="text-latte text-[24px] font-bold">
+                                    Indian Institute of Technology, Guwahati
+                                </h3>
+                                <p class="text-secondary text-[16px] font-semibold" style="margin: 0px">
+                                    B.Tech, Electronics and Communication Engineering
+                                </p>
+                            </div>
+                            <span class="vertical-timeline-element-date" style="color: black;">2020 - 2024</span>
+                        </div>
+                    </div>
+
+                    <div id="" class="vertical-timeline-element">
+                        <span class="vertical-timeline-element-icon bounce-in" style="background: rgb(230, 222, 221)">
+                            <div class="flex justify-center items-center w-full h-full">
+                                <img src="images\clg.jpeg" alt="IITG" class="w-[60%] h-[60%] object-contain" />
+                            </div>
+                        </span>
+                        <div class="vertical-timeline-element-content bounce-in" style="background: #4070F4; color: rgb(255, 255, 255)">
+                            <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(105, 78, 4)"></div>
+                            <div>
+                                <h3 class="text-latte text-[24px] font-bold">
+                                    Sri Chaitanya College
+                                </h3>
+                                <!-- <p class="text-secondary text-[16px] font-semibold" style="margin: 0px">
+                                    IIT Guwahati
+                                </p> -->
+                            </div>
+                            <span class="vertical-timeline-element-date" style="color: black;">2018-2024</span>
+                        </div>
+                    </div>
+
+                    <div id="" class="vertical-timeline-element">
+                        <span class="vertical-timeline-element-icon bounce-in" style="background: rgb(230, 222, 221)">
+                            <div class="flex justify-center items-center w-full h-full">
+                                <img src="images\school.png" alt="IITG" class="w-[60%] h-[60%] object-contain" />
+                            </div>
+                        </span>
+                        <div class="vertical-timeline-element-content bounce-in" style="background: #4070F4; color: rgb(255, 255, 255)">
+                            <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(105, 78, 4)"></div>
+                            <div>
+                                <h3 class="text-latte text-[24px] font-bold">
+                                    Sri Chaitanya High Scool
+                                </h3>
+                                <!-- <p class="text-secondary text-[16px] font-semibold" style="margin: 0px">
+                                    IIT Guwahati
+                                </p> -->
+                            </div>
+                            <span class="vertical-timeline-element-date" style="color: black;">2017 - 2018</span>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -77,11 +170,18 @@
             <div class="skills-container bd-grid">
                 <div>
                     <h2 class="skills-subtitle">Professional Skills</h2>
-                    <p class="skills-text">I love to think analytically and bring innovative ideas to life through data-driven solutions. I have proficiency in Python, SQL, and machine learning, ensuring that my insights are not only accurate but also impactful. I prioritize data integrity and user needs, conducting thorough research to uncover patterns, trends, and meaningful insights that drive informed decision-making.</p>
+                    <p class="skills-text">
+                        I love to think analytically and bring innovative ideas to life
+                        through data-driven solutions. I have proficiency in Python, SQL,
+                        and machine learning, ensuring that my insights are not only
+                        accurate but also impactful. I prioritize data integrity and user
+                        needs, conducting thorough research to uncover patterns, trends,
+                        and meaningful insights that drive informed decision-making.
+                    </p>
 
                     <div class="skills-data">
                         <div class="skills-names">
-                            <i class='bx bxl-python skills-icon' ></i>
+                            <i class="bx bxl-python skills-icon"></i>
                             <span class="skills-name">Python</span>
                         </div>
 
@@ -94,7 +194,7 @@
 
                     <div class="skills-data">
                         <div class="skills-names">
-                            <i class='bx bxl-python skills-icon' ></i>
+                            <i class="bx bxl-python skills-icon"></i>
                             <span class="skills-name">LangChain</span>
                         </div>
 
@@ -107,7 +207,7 @@
 
                     <div class="skills-data">
                         <div class="skills-names">
-                            <i class='bx bx-code-block skills-icon' ></i>
+                            <i class="bx bx-code-block skills-icon"></i>
                             <span class="skills-name">Natural Langauge Processing</span>
                         </div>
 
@@ -120,7 +220,7 @@
 
                     <div class="skills-data">
                         <div class="skills-names">
-                            <i class='bx bxl-flask skills-icon' ></i>
+                            <i class="bx bxl-flask skills-icon"></i>
                             <span class="skills-name">Flask</span>
                         </div>
 
@@ -133,7 +233,7 @@
                 </div>
 
                 <div>
-                    <img src="https://i.postimg.cc/52LWbPyt/work3.jpg" alt="image" class="skills-img">
+                    <img src="https://i.postimg.cc/52LWbPyt/work3.jpg" alt="image" class="skills-img" />
                 </div>
             </div>
         </section>
@@ -143,27 +243,33 @@
 
             <div class="work-container bd-grid">
                 <div class="work-img">
-                    <a href="https://github.com/appsbotta/AI_Assistant" target="_blank"><img src="images\ai assistant.webp" alt="image"></a>
+                    <a href="https://github.com/appsbotta/AI_Assistant" target="_blank"><img
+                            src="images\ai assistant.webp" alt="image" /></a>
                 </div>
 
                 <div class="work-img">
-                    <a href="https://github.com/appsbotta/Text-Summarizer" target="_blank"><img src="images\text.webp" alt="image"></a>
+                    <a href="https://github.com/appsbotta/Text-Summarizer" target="_blank"><img src="images\text.webp"
+                            alt="image" /></a>
                 </div>
 
                 <div class="work-img">
-                    <a href="https://github.com/appsbotta/CrewAI" target="_blank"><img src="images\crewai.webp" alt="image"></a>
+                    <a href="https://github.com/appsbotta/CrewAI" target="_blank"><img src="images\crewai.webp"
+                            alt="image" /></a>
                 </div>
 
                 <div class="work-img">
-                    <a href="https://github.com/appsbotta/LangChain" target="_blank" ><img src="images\Langchain.webp" alt="image"></a>
+                    <a href="https://github.com/appsbotta/LangChain" target="_blank"><img src="images\Langchain.webp"
+                            alt="image" /></a>
                 </div>
 
                 <div class="work-img">
-                    <a href="https://github.com/appsbotta/AgenticAi" target="_blank" ><img src="images\Agentic.webp" alt="image"></a>
+                    <a href="https://github.com/appsbotta/AgenticAi" target="_blank"><img src="images\Agentic.webp"
+                            alt="image" /></a>
                 </div>
 
                 <div class="work-img">
-                    <a href="https://github.com/appsbotta/Gemini" target="_blank" ><img src="images\gemini.png" alt="image"></a>
+                    <a href="https://github.com/appsbotta/Gemini" target="_blank"><img src="images\gemini.png"
+                            alt="image" /></a>
                 </div>
             </div>
         </section>
@@ -172,15 +278,19 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact-container bd-grid">
-                <form action="https://formsubmit.co/179f14f2924e9ab847d66b653346dc83" method="POST" class="contact-form">
-                    <input type="hidden" name="_subject" value="New submission!!">
-                    <input type="email" name="email" placeholder="Email" class="contact-input" required>
-                    <input type="hidden" name="_next" value="https://bottalokesh.netlify.app/thankyou.html">
-                    <input type="text" name="name" placeholder="Name" class="contact-input" required>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="message" placeholder="Message" name="" id=""  class="contact-input" required>
+                <form action="https://formsubmit.co/179f14f2924e9ab847d66b653346dc83" method="POST"
+                    class="contact-form">
+                    <input type="hidden" name="_subject" value="New submission!!" />
+                    <input type="email" name="email" placeholder="Email" class="contact-input" required />
+                    <input type="hidden" name="_next" value="https://bottalokesh.netlify.app/thankyou.html" />
+                    <input type="text" name="name" placeholder="Name" class="contact-input" required />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="text" name="message" placeholder="Message" name="" id="" class="contact-input"
+                        required />
                     <!-- <textarea name="" id="" cols="0" rows="10" class="contact-input" required></textarea> -->
-                    <button type="submit" value="Send" class="contact-button button">Send</button>
+                    <button type="submit" value="Send" class="contact-button button">
+                        Send
+                    </button>
                 </form>
             </div>
         </section>
@@ -191,8 +301,8 @@
 
         <div class="footer-social">
             <!-- <a href="#" class="footer-icon"><i class='bx bxl-facebook'></i></a> -->
-            <a href="#" class="footer-icon"><i class='bx bxl-instagram' ></i></a>
-            <a href="#" class="footer-icon"><i class='bx bxl-twitter' ></i></a>
+            <a href="#" class="footer-icon"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="footer-icon"><i class="bx bxl-twitter"></i></a>
         </div>
 
         <p>&#169; 2025 Copyright all rights reserved</p>
@@ -201,4 +311,5 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
