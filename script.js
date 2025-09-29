@@ -43,9 +43,10 @@ sr.reveal('.about-img', {} )
 sr.reveal('.about-subtitle', {delay: 200} )
 sr.reveal('.about-text', {delay: 400} )
 
+sr.reveal('.section-title', {})
+sr.reveal('.vertical-timeline-element', {delay: 200, interval: 200} )
 
-sr.reveal('.vertical-timeline-element', {delay: 200} )
-
+sr.reveal('.experience-content', {delay: 200} )
 
 sr.reveal('.skills-subtitle', {delay: 100} )
 sr.reveal('.skills-text', {delay: 150} )
