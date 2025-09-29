@@ -566,7 +566,119 @@ img {
     }
 }
 
+/*EXPERIENCE*/
+.experience-container {
+    row-gap: 2rem;
+}
 
+.experience-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+}
+
+.experience-header {
+    margin-bottom: var(--mb2);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: var(--mb2);
+    position: relative;
+}
+
+.experience-title {
+    font-size: 1.25rem;
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-semi);
+}
+
+.experience-company {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-duration {
+    font-size: 0.9rem;
+    color: #666;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item {
+    display: flex;
+    margin-bottom: var(--mb2);
+    align-items: flex-start;
+}
+
+.experience-item i {
+    color: var(--first-color);
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.experience-item p {
+    margin: 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+    .experience-duration {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .experience-content {
+        padding: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .experience-duration {
+        position: static;
+        display: block;
+        margin-top: 0.5rem;
+    }
+    
+    .experience-content {
+        padding: 1.5rem;
+    }
+    
+    .experience-title {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .experience-content {
+        padding: 1.25rem;
+    }
+    
+    .experience-item {
+        flex-direction: column;
+    }
+    
+    .experience-item i {
+        margin-bottom: 0.5rem;
+    }
+    
+    .experience-title {
+        font-size: 1.1rem;
+    }
+    
+    .experience-company {
+        font-size: 0.9rem;
+    }
+}
 
 /*SKILLS*/
 
