@@ -213,10 +213,11 @@ img {
     content: "";
     position: absolute;
     top: 0;
-    left: 18px;
+    left: 50%;
     height: 100%;
     width: 4px;
-    background: var(--line-color)
+    margin-left: -2px;
+    background: #ddd;
 }
 
 .vertical-timeline-element {
@@ -245,17 +246,14 @@ img {
 .vertical-timeline-element-icon {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 0 4px #fff,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05);
-    box-shadow: 0 0 0 4px #fff,inset 0 2px #00000014,0 3px 0 4px #0000000d
-}
-
-.vertical-timeline-element-icon {
-    right: 0;
-    left: unset
+    box-shadow: 0 0 0 4px #fff,inset 0 2px #00000014,0 3px 0 4px #0000000d;
+    z-index: 10;
 }
 
 .vertical-timeline-element-icon svg {
@@ -324,22 +322,30 @@ img {
 
 .vertical-timeline-element-content {
     position: relative;
-    margin-left: 60px;
+    width: 44%;
+    margin: 0;
     background: #fff;
     border-radius: .25em;
-    padding: 1em;
+    padding: 1.5em;
     -webkit-box-shadow: 0 3px 0 #ddd;
-    box-shadow: 0 3px #ddd
+    box-shadow: 0 3px #ddd;
+    float: left;
+}
+
+.vertical-timeline-element:nth-child(even) .vertical-timeline-element-content {
+    float: right;
 }
 
 .vertical-timeline-element-content:after {
     content: "";
     display: table;
-    clear: both
+    clear: both;
 }
 
-.vertical-timeline-element-content h2 {
-    color: #303e49
+.vertical-timeline-element-content h2,
+.vertical-timeline-element-content h3 {
+    color: #303e49;
+    margin-top: 0;
 }
 
 .vertical-timeline-element-content .vertical-timeline-element-date,.vertical-timeline-element-content p {
@@ -366,12 +372,34 @@ img {
 .vertical-timeline-element-content-arrow {
     content: "";
     position: absolute;
-    top: 16px;
-    right: 100%;
+    top: 24px;
+    left: 100%;
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right: 7px solid #fff
+    border-left: 7px solid #fff;
+}
+
+.vertical-timeline-element:nth-child(even) .vertical-timeline-element-content-arrow {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-left: 0;
+    border-right: 7px solid #fff;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    position: absolute;
+    width: 100%;
+    left: 124%;
+    top: 6px;
+    font-size: 16px;
+}
+
+.vertical-timeline-element:nth-child(even) .vertical-timeline-element-content .vertical-timeline-element-date {
+    left: auto;
+    right: 124%;
+    text-align: right;
 }
 
 .vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
@@ -703,5 +731,89 @@ img {
     }
 
     .show { right: 0; }
+}
+
+/* Ensure timeline is consistent across all screen sizes */
+.vertical-timeline:before {
+    left: 50%;
+    margin-left: -2px;
+}
+
+.vertical-timeline-element-icon {
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+}
+
+.vertical-timeline-element-content {
+    width: 44%;
+    margin-left: 0;
+    float: left;
+}
+
+.vertical-timeline-element:nth-child(even) .vertical-timeline-element-content {
+    float: right;
+    margin-right: 0;
+}
+
+.vertical-timeline-element-content-arrow {
+    display: block;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    position: absolute;
+    width: 100%;
+    left: 124%;
+    top: 6px;
+    font-size: 14px;
+}
+
+.vertical-timeline-element:nth-child(even) .vertical-timeline-element-content .vertical-timeline-element-date {
+    left: auto;
+    right: 124%;
+    text-align: right;
+}
+
+/* Additional styling for small screens */
+@media screen and (max-width: 576px) {
+    .vertical-timeline-element-content {
+        width: 40%;
+    }
+    
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        font-size: 12px;
+        left: 115%;
+    }
+    
+    .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content .vertical-timeline-element-date {
+        right: 115%;
+    }
+}
+
+/* Extra styling for very small screens */
+@media screen and (max-width: 450px) {
+    .vertical-timeline-element-content {
+        width: 38%;
+        padding: 1em;
+    }
+    
+    .vertical-timeline-element-content h2,
+    .vertical-timeline-element-content h3 {
+        font-size: 14px;
+    }
+    
+    .vertical-timeline-element-content p {
+        font-size: 12px;
+    }
+    
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        font-size: 11px;
+        left: 110%;
+    }
+    
+    .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content .vertical-timeline-element-date {
+        right: 110%;
+    }
 }
 
